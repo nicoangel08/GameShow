@@ -1,0 +1,51 @@
+# Ask the user a bunch of questions, keep track of score and provide a score at the end
+
+#intro statement
+print('Welcome to the quiz game show!')
+
+#prompt
+play = input('Do you want to participate? ')
+
+#participation confirmation
+if play.lower() != 'yes':
+    quit()
+
+print('Come on down, Lets play the quiz game!')
+#created the variable score to start keeping track
+score = 0
+
+#question one
+answer = input('Is every villain is lemons a true statement? ')
+if answer.lower() == 'yes':
+    print('Correct!')
+    score += 1
+else:
+    print('Wrrrrrrrrrrrrrrrong *Donald Trump Voice*')
+
+#question two
+answer = input('How many rings did Kobe have? ')
+if answer.lower() == 'five':
+    print('Correct!')
+    score += 1
+else:
+    print('Wrrrrrrrrrrrrrrrong *Donald Trump Voice*')
+    
+#question three
+answer = input('Where do you work? ')
+if answer.lower() == 'pds':
+    print('Correct!')
+    score += 1
+else:
+    print('Wrrrrrrrrrrrrrrrong *Donald Trump Voice*')
+    
+#question four
+answer = input('Is it sunny outside? ')
+if answer.lower() == 'yes':
+    print('Correct!')
+    score += 1
+else:
+    print('Wrrrrrrrrrrrrrrrong *Donald Trump Voice*')
+
+      
+print('You got a total of ' + str(score) + ' questions correct!')
+print('You got a total of ' + str((score / 4) * 100) + '%')
